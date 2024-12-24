@@ -5,3 +5,4 @@ const api = axios.create({
 });
 
 export const getTasks = () => api.get('/sample');
+export const getBlocks = () => api.get('/block');

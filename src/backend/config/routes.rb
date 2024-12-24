@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :sample, only: [:index, :show]
-  resources :blobk, only: [:index, :show]
+  resources :block, only: [:index, :show]
 end

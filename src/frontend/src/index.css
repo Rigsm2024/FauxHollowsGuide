@@ -24,6 +24,7 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 10px;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -65,4 +66,45 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+/* =========== my styles =========== */
+.selector-container {
+  width: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding-bottom: 6px;
+}
+
+.panel-container {
+  margin: 10px;
+}
+
+.item-base {
+  width: 36px;
+  height: 36px;
+  margin: 3px;
+  border: 1px grey solid;
+}
+
+.item-base.sword { background-color: lightblue; }
+.item-base.box { background-color: lightsalmon; }
+.item-base.faux { background-color: lightgreen; }
+.item-base.block { background-color: grey; }
+
+.item-base.selector {
+  min-width: 6px;
+  height: 6px;
+  margin: 0;
+}
+
+.selector-table {
+  border-spacing: 1px;
+  margin: 3px;
+}
+
+.selector-table:active {
+  transform: scale(0.9);
 }
