@@ -1,0 +1,14 @@
+FROM ruby:3.2.6
+
+WORKDIR /rails
+
+# Copy Gemfile only
+COPY Gemfile Gemfile
+
+# Install dependencies and generate Gemfile.lock
+RUN bundle install --jobs 4 --retry 3
+
+# Copy the rest of the application
+COPY . .
+
+CMD ["puma", "-C", "config/puma.rb"]

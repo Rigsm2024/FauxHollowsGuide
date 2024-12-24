@@ -1,0 +1,2 @@
+class BlockPattern < ApplicationRecord
+end
